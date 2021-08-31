@@ -1,5 +1,5 @@
-/*menu simple con tamaño mayor a 320px - Desktop*/
-@media screen and (min-width: 320px){
+/*menu simple con tamaño mayor a 760px - Desktop*/
+@media screen and (min-width: 760px){
     body{
         button{
             height: 56px;
@@ -23,7 +23,7 @@
         }   
 
         header {
-            height: 2%;
+            height: 7vh;
     
             img {
                 margin-left: 6.9%;
@@ -35,6 +35,9 @@
                 .menu{
                     ul {
                         position: relative;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: space-around;
                         width: 100%;
                         top: 0;
                         right: 0;
@@ -48,7 +51,7 @@
         
                             a {
                                 padding: unset;
-                                line-height: unset;
+                                color: $text-color;
                             }
                         }
                         
@@ -112,6 +115,8 @@
 
             }
             .episodes{
+                width: 100;
+                padding-bottom: 0;
                 h2{
                     padding-top: 192px;
                 }
@@ -127,9 +132,6 @@
                         height: 232px;
                         margin: 0.9% 2.5%;
                     }
-                    iframe:last-child{
-                        padding-bottom: 0;
-                    }
                 }
             }
             .us{
@@ -143,7 +145,7 @@
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: center;
-                    width: 31.8%;
+                    width: 40%;
                 }
                 .us_container{
                     flex-direction: column;
@@ -177,7 +179,7 @@
                 }
             }
             .topics{
-                margin-top: 32px;
+                padding-top: 32px;
                 letter-spacing: 0;
                 h2{
                     font-size: 48px;
