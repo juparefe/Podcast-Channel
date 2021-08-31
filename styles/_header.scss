@@ -1,26 +1,24 @@
 header {
     width: 100%;
+    position: fixed;
+    height: 44px;
+    top: 0;
+    z-index: 10;
+    padding: 0.2% 5%;
+    background-color: $bg-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 0.8%;
-    top: 0;
-    padding: 0.2% 5%;
     font-family: $font-mono;
 
     img {
-        align-self: flex-start;
         height: 24px;
         width: 24px;
-        margin: 10px 0;
+        margin: auto 5%;
     }
 
     nav {
-        float: right;
-
         .menu {
-            padding-top: 10px;
-
             ul {
                 /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
                 width: 100%;
@@ -38,15 +36,13 @@ header {
                     a {
                         position: relative;
                         text-decoration: none;
-                        color: #000;
-                        padding: 16px 5%;
+                        color: $bg-color;
+                        padding: 15px 5%;
                         line-height: 28px;
                         display: block;
+                        font-size: 16px;
+                        letter-spacing: 0;
                     }
-                    
-                    a:hover {
-                        color: #fff;
-                    } 
                 } 
     
                 li:hover {
@@ -56,6 +52,9 @@ header {
 
             input[type="checkbox"]:checked ~ ul {
                 height: 240px;
+                .sections{
+                    display: block;
+                }
             }
 
             /*checkbox transparente y en primer plano*/
@@ -104,4 +103,3 @@ header {
         }  
     }
 }
-
