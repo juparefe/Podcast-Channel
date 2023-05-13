@@ -7,7 +7,7 @@ Siguiendo las guías visuales de una interfaz de usuario otorgada y desarrolland
 ## Paso a paso para ejecutar el repositorio
 * Clonar el repositorio en el entorno local utilizando el comando 
 ```
-git clone urlRepositorioCopiado
+git clone https://github.com/juparefe/Podcast-Channel.git
 ```
 * Abrir la carpeta clonada con algun editor de codigo
 * Como este repositorio solo utiliza HTML y CSS se debe tener instalada la extension **Live Server**
